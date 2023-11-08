@@ -1,59 +1,62 @@
 import React, { Component } from 'react';
+import logo from "../icon_assests/footer-logo.png"
 
 export default class Footer extends Component {
     render() {
         return (
-            <footer>
-                <img src='../icon_assests/Logo.svg' alt='logo'></img>
-                <ul>
+            <footer className='footer'>
+                <div className='footer-image'>
+                    <img src={logo} alt='logo'></img>
+                </div>
+                <ul className='footer-list'>
                     <li>
-                        Doormat Navigation
+                        <h3>Navigation</h3>
                     </li>
                     <li>
-                        <a href='google.com'>Home</a>
+                        <a href='/'>Home</a>
                     </li>
                     <li>
-                        <a href='google.com'>About</a>
+                        <a href='/'>About</a>
                     </li>
                     <li>
-                        <a href='google.com'>Menu</a>
+                        <a href='/'>Menu</a>
                     </li>
                     <li>
-                        <a href='google.com'>Reservations</a>
+                        <a href='/reservations'>Reservations</a>
                     </li>
                     <li>
-                        <a href='google.com'>Order Online</a>
+                        <a href='/'>Order Online</a>
                     </li>
                     <li>
-                        <a href='google.com'>Login</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        Contact
-                    </li>
-                    <li>
-                        <a href='google.com'>Address</a>
-                    </li>
-                    <li>
-                        <a href='google.com'>Phone Number</a>
-                    </li>
-                    <li>
-                        <a href='google.com'>Email</a>
+                        <a href='/'>Login</a>
                     </li>
                 </ul>
-                <ul>
+                <ul className='footer-list'>
                     <li>
-                        Social Media Links
+                        <h3>Contact</h3>
                     </li>
                     <li>
-                        <a href='google.com'>Facebook</a>
+                        <a href='/'>Address</a>
                     </li>
                     <li>
-                        <a href='google.com'>Instagram</a>
+                        <a href='/'>Phone Number</a>
                     </li>
                     <li>
-                        <a href='google.com'>Linkedin</a>
+                        <a href='/'>Email</a>
+                    </li>
+                </ul>
+                <ul className='footer-list'>
+                    <li>
+                        <h3>Social Media</h3>
+                    </li>
+                    <li>
+                        <a href='https://facebook.com'>Facebook</a>
+                    </li>
+                    <li>
+                        <a href='https://instagram.com'>Instagram</a>
+                    </li>
+                    <li>
+                        <a href='https://linkedin.com'>Linkedin</a>
                     </li>
                 </ul>
             </footer>

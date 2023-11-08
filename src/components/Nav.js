@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
+import logo from "../icon_assests/Logo.svg";
 
 export default class Nav extends Component {
     render() {
         return (
-            <nav>
-                <img src='../icon_assests/Logo.svg' alt='logo'></img>
-                <ul>
+            <nav className='navbar'>
+                <img src={logo} alt='logo'></img>
+                <ul className='navLinks'>
                     <li>
-                        <a href='google.com'>Home</a>
+                        <a href='/'>Home</a>
                     </li>
                     <li>
-                        <a href='google.com'>About</a>
+                        <a href='/'>About</a>
                     </li>
                     <li>
-                        <a href='google.com'>Menu</a>
+                        <a href='/'>Menu</a>
                     </li>
                     <li>
-                        <a href='google.com'>Reservations</a>
+                        <a href='/reservations'>Reservations</a>
                     </li>
                     <li>
-                        <a href='google.com'>Order Online</a>
+                        <a href='/'>Order Online</a>
                     </li>
                     <li>
-                        <a href='google.com'>Login</a>
+                        <a href='/'>Login</a>
                     </li>
                 </ul>
             </nav>
